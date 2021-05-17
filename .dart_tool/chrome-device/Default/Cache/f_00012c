@@ -1,0 +1,333 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/widgets/async.dart', 'packages/cloud_firestore/cloud_firestore.dart', 'packages/flutter/src/material/progress_indicator.dart', 'packages/aishop/theme.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/painting/basic_types.dart', 'packages/flutter/src/rendering/sliver_grid.dart', 'packages/aishop/widgets/product_model.dart'], (function load__packages__aishop__widgets__clothes_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__widgets__async$46dart, packages__cloud_firestore__cloud_firestore$46dart, packages__flutter__src__material__progress_indicator$46dart, packages__aishop__theme$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__painting__basic_types$46dart, packages__flutter__src__rendering__sliver_grid$46dart, packages__aishop__widgets__product_model$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const async = packages__flutter__src__widgets__async$46dart.src__widgets__async;
+  const cloud_firestore = packages__cloud_firestore__cloud_firestore$46dart.cloud_firestore;
+  const progress_indicator = packages__flutter__src__material__progress_indicator$46dart.src__material__progress_indicator;
+  const theme = packages__aishop__theme$46dart.theme;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const basic_types = packages__flutter__src__painting__basic_types$46dart.src__painting__basic_types;
+  const sliver_grid = packages__flutter__src__rendering__sliver_grid$46dart.src__rendering__sliver_grid;
+  const product_model = packages__aishop__widgets__product_model$46dart.widgets__product_model;
+  var clothes = Object.create(dart.library);
+  var $_get = dartx._get;
+  var $toString = dartx.toString;
+  var $length = dartx.length;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    ObjectN: () => (T.ObjectN = dart.constFn(dart.nullable(core.Object)))(),
+    QuerySnapshotOfObjectN: () => (T.QuerySnapshotOfObjectN = dart.constFn(cloud_firestore.QuerySnapshot$(T.ObjectN())))(),
+    StreamBuilderOfQuerySnapshotOfObjectN: () => (T.StreamBuilderOfQuerySnapshotOfObjectN = dart.constFn(async.StreamBuilder$(T.QuerySnapshotOfObjectN())))(),
+    BuildContextAndintToProductCard: () => (T.BuildContextAndintToProductCard = dart.constFn(dart.fnType(product_model.ProductCard, [framework.BuildContext, core.int])))(),
+    AsyncSnapshotOfQuerySnapshotOfObjectN: () => (T.AsyncSnapshotOfQuerySnapshotOfObjectN = dart.constFn(async.AsyncSnapshot$(T.QuerySnapshotOfObjectN())))(),
+    BuildContextAndAsyncSnapshotOfQuerySnapshotOfObjectNToWidget: () => (T.BuildContextAndAsyncSnapshotOfQuerySnapshotOfObjectNToWidget = dart.constFn(dart.fnType(framework.Widget, [framework.BuildContext, T.AsyncSnapshotOfQuerySnapshotOfObjectN()])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 17,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "id",
+        [_Location_column]: 46,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imgUrl",
+        [_Location_column]: 46,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 46,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "description",
+        [_Location_column]: 46,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "price",
+        [_Location_column]: 59,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9, C[10] || CT.C10, C[11] || CT.C11, C[12] || CT.C12], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 33,
+        [_Location_file]: "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scrollDirection",
+        [_Location_column]: 15,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "gridDelegate",
+        [_Location_column]: 15,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 15,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 15,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15, C[16] || CT.C16, C[17] || CT.C17, C[18] || CT.C18], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "stream",
+        [_Location_column]: 9,
+        [_Location_line]: 14,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 9,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21, C[22] || CT.C22], widget_inspector._Location);
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 13,
+        [_Location_file]: "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 11,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 12,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.constList([C[25] || CT.C25, C[26] || CT.C26, C[27] || CT.C27], widget_inspector._Location);
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[24] || CT.C24,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 10,
+        [_Location_file]: "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart"
+      });
+    }
+  }, false);
+  var C = Array(28).fill(void 0);
+  var I = [
+    "file:///C:/Users/mmase/OneDrive/Documents/SD/AIShop/AI-Shopping-System/lib/widgets/clothes.dart",
+    "package:aishop/widgets/clothes.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  clothes.Clothes = class Clothes extends framework.StatelessWidget {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 9, 29, "context");
+      return new container.Container.new({width: 0.0, height: 400.0, child: new (T.StreamBuilderOfQuerySnapshotOfObjectN()).new({stream: cloud_firestore.FirebaseFirestore.instance.collection("Products").where("category", {isEqualTo: "Clothing"}).snapshots(), builder: dart.fn((context, snapshot) => {
+            if (context == null) dart.nullFailed(I[0], 18, 19, "context");
+            if (snapshot == null) dart.nullFailed(I[0], 18, 28, "snapshot");
+            if (!dart.test(snapshot.hasData)) {
+              return new basic.SizedBox.new({child: new progress_indicator.CircularProgressIndicator.new({backgroundColor: theme.lightgrey, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3});
+            } else {
+              return new scroll_view.GridView.builder({scrollDirection: basic_types.Axis.horizontal, gridDelegate: new sliver_grid.SliverGridDelegateWithFixedCrossAxisCount.new({crossAxisCount: 1, childAspectRatio: 3 / 2, mainAxisSpacing: 0.0}), itemBuilder: dart.fn((context, index) => {
+                  if (context == null) dart.nullFailed(I[0], 32, 29, "context");
+                  if (index == null) dart.nullFailed(I[0], 32, 38, "index");
+                  return new product_model.ProductCard.new(dart.nullCheck(snapshot.data).docs[$_get](index).id, core.String.as(dart.nullCheck(snapshot.data).docs[$_get](index).get("url")), core.String.as(dart.nullCheck(snapshot.data).docs[$_get](index).get("name")), core.String.as(dart.nullCheck(snapshot.data).docs[$_get](index).get("description")), dart.toString(dart.nullCheck(snapshot.data).docs[$_get](index).get("price")), {$creationLocationd_0dea112b090073317d4: C[6] || CT.C6});
+                }, T.BuildContextAndintToProductCard()), itemCount: dart.nullCheck(snapshot.data).docs[$length], $creationLocationd_0dea112b090073317d4: C[13] || CT.C13});
+            }
+          }, T.BuildContextAndAsyncSnapshotOfQuerySnapshotOfObjectNToWidget()), $creationLocationd_0dea112b090073317d4: C[19] || CT.C19}), $creationLocationd_0dea112b090073317d4: C[23] || CT.C23});
+    }
+  };
+  (clothes.Clothes.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    clothes.Clothes.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = clothes.Clothes.prototype;
+  dart.addTypeTests(clothes.Clothes);
+  dart.addTypeCaches(clothes.Clothes);
+  dart.setMethodSignature(clothes.Clothes, () => ({
+    __proto__: dart.getMethods(clothes.Clothes.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(clothes.Clothes, I[1]);
+  dart.trackLibraries("packages/aishop/widgets/clothes.dart", {
+    "package:aishop/widgets/clothes.dart": clothes
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["clothes.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAQ4B;AACxB,YAAO,qCACE,aACC,cACD,6DACqB,AACrB,AACA,AACA,sDAFW,kBACL,wBAAuB,mCAEzB,SAAC,SAAS;gBAAT;gBAAS;AACjB,2BAAK,AAAS,QAAD;AACX,oBAAO,gCACE,uEACY;;AAIrB,oBAAgB,oDACQ,2CACR,+EACM,qBACE,AAAE,IAAE,oBACL,oBACR,SAAC,SAAS;sBAAT;sBAAS;AACrB,wBAAO,mCACQ,AAAE,AAAI,AAAQ,eAA3B,AAAS,QAAD,mBAAY,KAAK,qBACZ,AAAE,AAAI,AAAQ,eAA3B,AAAS,QAAD,mBAAY,KAAK,MAAM,wBAClB,AAAE,AAAI,AAAQ,eAA3B,AAAS,QAAD,mBAAY,KAAK,MAAM,yBAClB,AAAE,AAAI,AAAQ,eAA3B,AAAS,QAAD,mBAAY,KAAK,MAAM,iBACS,cAA3B,AAAE,AAAI,AAAQ,eAA3B,AAAS,QAAD,mBAAY,KAAK,MAAM;oEAGX,AAAE,AAAK,eAApB,AAAS,QAAD;;;IAM/B;;;;;;EACF","file":"../../../../../../../../../packages/aishop/widgets/clothes.dart.lib.js"}');
+  // Exports:
+  return {
+    widgets__clothes: clothes
+  };
+}));
+
+//# sourceMappingURL=clothes.dart.lib.js.map

@@ -1,4 +1,4 @@
-import 'package:aishop/components/searchservice.dart';
+import 'package:aishop/components/databasemanager.dart';
 import 'package:aishop/icons/icons.dart';
 import 'package:aishop/utils/cart.dart';
 import 'package:aishop/utils/wishlist.dart';
@@ -174,7 +174,7 @@ class _ProductCard extends State<ProductCard> {
                   //on tap modal pop up
                   Modal(context, widget.imgUrl, widget.name, widget.description,
                       widget.price);
-                  SearchService().increment(widget.name);
+                  DataService().increment(widget.name);
                 },
                 splashColor: Colors.white30,
                 customBorder: RoundedRectangleBorder(
